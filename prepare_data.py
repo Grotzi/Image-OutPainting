@@ -6,9 +6,12 @@ from augment_image import aug_image
 
 # raw_data_path: directory where the downloaded images are
 # save_path: directory where the numpy images will be
-raw_data_path = "data/raw_data/beach_image"
+raw_data_path = "data/raw_data"
+#raw_data_path = "C:/Users/timku/Documents/GitHub/Image-OutPainting/data/raw_data/beach_image"
 train_save_path = "data/prepared_data/train"
 test_save_path = "data/prepared_data/test"
+
+print(os.listdir("data/raw_data/"))
 
 # Train/Test Data split
 train_percen = 0.9
